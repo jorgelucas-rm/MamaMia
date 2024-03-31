@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:background="@color/green">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/lightyellow"
+        tools:context=".MainActivity">
+
+        <!-- Início do cabeçalho -->
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textHeader"
+            android:textStyle="bold|italic"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubHeader"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textHeader" />
+        <!-- Final do cabeçalho -->
+
+        <!-- Início da seção "entradas" -->
+        <TextView
+            android:id="@+id/textSection1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="15dp"
+            android:text="@string/textSection1"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSubHeader" />
+
+        <!-- Entrada 1 - Bruschetta -->
+        <CheckBox
+            android:id="@+id/buttonItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSection1" />
+
+        <ImageView
+            android:id="@+id/imgItem1"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/bruschetta"
+            app:layout_constraintStart_toEndOf="@id/buttonItem1"
+            app:layout_constraintTop_toTopOf="@id/buttonItem1"/>
+
+        <TextView
+            android:id="@+id/textNameItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem1"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem1"
+            app:layout_constraintTop_toTopOf="@id/imgItem1" />
+
+        <TextView
+            android:id="@+id/textSubItem1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem1"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem1"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem1" />
+
+        <TextView
+            android:id="@+id/textPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem1"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem1" />
+        <!-- Entrada 1 - Bruschetta -->
+
+        <!-- Entrada 2 - Pastéis Variados -->
+        <CheckBox
+            android:id="@+id/buttonItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem1" />
+
+        <ImageView
+            android:id="@+id/imgItem2"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/pasteis"
+            app:layout_constraintStart_toEndOf="@id/buttonItem2"
+            app:layout_constraintTop_toTopOf="@id/buttonItem2" />
+
+        <TextView
+            android:id="@+id/textNameItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem2"
+            app:layout_constraintTop_toTopOf="@id/imgItem2" />
+
+        <TextView
+            android:id="@+id/textSubItem2"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem2"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem2"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem2" />
+
+        <TextView
+            android:id="@+id/textPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem2"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem2" />
+        <!-- Entrada 2 - Pastéis Variados -->
+
+        <!-- Entrada 3 - Arancini Pomodoro -->
+        <CheckBox
+            android:id="@+id/buttonItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem2" />
+
+        <ImageView
+            android:id="@+id/imgItem3"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/Arancini"
+            app:layout_constraintStart_toEndOf="@id/buttonItem3"
+            app:layout_constraintTop_toTopOf="@id/buttonItem3" />
+
+        <TextView
+            android:id="@+id/textNameItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem3"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem3"
+            app:layout_constraintTop_toTopOf="@id/imgItem3" />
+
+        <TextView
+            android:id="@+id/textSubItem3"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem3"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem3"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem3" />
+
+        <TextView
+            android:id="@+id/textPrice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem3"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem3" />
+        <!-- Entrada 3 - Arancini Pomodoro -->
+
+        <!-- Entrada 4 - Polenta Bramata -->
+        <CheckBox
+            android:id="@+id/buttonItem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem3" />
+
+        <ImageView
+            android:id="@+id/imgItem4"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/polenta"
+            app:layout_constraintStart_toEndOf="@id/buttonItem4"
+            app:layout_constraintTop_toTopOf="@id/buttonItem4" />
+
+        <TextView
+            android:id="@+id/textNameItem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem4"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem4"
+            app:layout_constraintTop_toTopOf="@id/imgItem4" />
+
+        <TextView
+            android:id="@+id/textSubItem4"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem4"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem4"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem4" />
+
+        <TextView
+            android:id="@+id/textPrice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem4"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem4" />
+        <!-- Entrada 4 - Polenta Bramata -->
+
+        <!-- Final da seção "entradas" -->
+
+        <!-- Início da seção "pratos principas" -->
+        <TextView
+            android:id="@+id/textSection2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="15dp"
+            android:text="@string/textSection2"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgItem4" />
+
+        <!-- Prato principal 1 - Carbonara -->
+        <CheckBox
+            android:id="@+id/buttonItem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSection2" />
+
+        <ImageView
+            android:id="@+id/imgItem5"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/carbonara"
+            app:layout_constraintStart_toEndOf="@id/buttonItem5"
+            app:layout_constraintTop_toTopOf="@id/buttonItem5" />
+
+        <TextView
+            android:id="@+id/textNameItem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem5"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem5"
+            app:layout_constraintTop_toTopOf="@id/imgItem5" />
+
+        <TextView
+            android:id="@+id/textSubItem5"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem5"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem5"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem5" />
+
+        <TextView
+            android:id="@+id/textPrice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem5"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem5" />
+        <!-- Prato principal 1 - Carbonara -->
+
+        <!-- Prato principal 2 - Molho branco -->
+        <CheckBox
+            android:id="@+id/buttonItem6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem5" />
+
+        <ImageView
+            android:id="@+id/imgItem6"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/molhobranco"
+            app:layout_constraintStart_toEndOf="@id/buttonItem6"
+            app:layout_constraintTop_toTopOf="@id/buttonItem6" />
+
+        <TextView
+            android:id="@+id/textNameItem6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem6"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem6"
+            app:layout_constraintTop_toTopOf="@id/imgItem6" />
+
+        <TextView
+            android:id="@+id/textSubItem6"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem6"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem6"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem6" />
+
+        <TextView
+            android:id="@+id/textPrice6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem6"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem6" />
+        <!-- Prato principal 2 - Molho branco -->
+
+        <!-- Prato principal 3 - Molho pesto -->
+        <CheckBox
+            android:id="@+id/buttonItem7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem6" />
+
+        <ImageView
+            android:id="@+id/imgItem7"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/pesto"
+            app:layout_constraintStart_toEndOf="@id/buttonItem7"
+            app:layout_constraintTop_toTopOf="@id/buttonItem7" />
+
+        <TextView
+            android:id="@+id/textNameItem7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem7"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem7"
+            app:layout_constraintTop_toTopOf="@id/imgItem7" />
+
+        <TextView
+            android:id="@+id/textSubItem7"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem7"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem7"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem7" />
+
+        <TextView
+            android:id="@+id/textPrice7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem7"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem7" />
+        <!-- Prato principal 3 - Molho pesto -->
+
+        <!-- Prato principal 4 - Molho pomodoro -->
+        <CheckBox
+            android:id="@+id/buttonItem8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem7" />
+
+        <ImageView
+            android:id="@+id/imgItem8"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/pomodoro"
+            app:layout_constraintStart_toEndOf="@id/buttonItem8"
+            app:layout_constraintTop_toTopOf="@id/buttonItem8" />
+
+        <TextView
+            android:id="@+id/textNameItem8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem8"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem8"
+            app:layout_constraintTop_toTopOf="@id/imgItem8" />
+
+        <TextView
+            android:id="@+id/textSubItem8"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem8"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem8"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem8" />
+
+        <TextView
+            android:id="@+id/textPrice8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem8"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem8" />
+        <!-- Prato principal 4 - Molho pomodoro -->
+
+        <!-- Prato principal 5 - lasanha 4 queijos -->
+        <CheckBox
+            android:id="@+id/buttonItem9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem8" />
+
+        <ImageView
+            android:id="@+id/imgItem9"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/lasanha4queijos"
+            app:layout_constraintStart_toEndOf="@id/buttonItem9"
+            app:layout_constraintTop_toTopOf="@id/buttonItem9" />
+
+        <TextView
+            android:id="@+id/textNameItem9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem9"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem9"
+            app:layout_constraintTop_toTopOf="@id/imgItem9" />
+
+        <TextView
+            android:id="@+id/textSubItem9"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem9"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem9"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem9" />
+
+        <TextView
+            android:id="@+id/textPrice9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem9"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem9" />
+        <!-- Prato principal 5 - lasanha 4 queijos -->
+
+        <!-- Prato principal 6 - lasanha bolonhesa -->
+        <CheckBox
+            android:id="@+id/buttonItem10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem9" />
+
+        <ImageView
+            android:id="@+id/imgItem10"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/lasanhabolonhesa"
+            app:layout_constraintStart_toEndOf="@id/buttonItem10"
+            app:layout_constraintTop_toTopOf="@id/buttonItem10" />
+
+        <TextView
+            android:id="@+id/textNameItem10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem10"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem10"
+            app:layout_constraintTop_toTopOf="@id/imgItem10" />
+
+        <TextView
+            android:id="@+id/textSubItem10"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem10"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem10"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem10" />
+
+        <TextView
+            android:id="@+id/textPrice10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem10"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem10" />
+        <!-- Prato principal 6 - lasanha bolonhesa -->
+
+        <!-- Prato principal 7 - lasanha sertaneja -->
+        <CheckBox
+            android:id="@+id/buttonItem11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem10" />
+
+        <ImageView
+            android:id="@+id/imgItem11"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/lasanhasertaneja"
+            app:layout_constraintStart_toEndOf="@id/buttonItem11"
+            app:layout_constraintTop_toTopOf="@id/buttonItem11" />
+
+        <TextView
+            android:id="@+id/textNameItem11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem11"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem11"
+            app:layout_constraintTop_toTopOf="@id/imgItem11" />
+
+        <TextView
+            android:id="@+id/textSubItem11"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem11"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem11"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem11" />
+
+        <TextView
+            android:id="@+id/textPrice11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem11"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem11" />
+        <!-- Prato principal 7 - lasanha sertaneja -->
+
+        <!-- Prato principal 8 - lasanha vegetariana -->
+        <CheckBox
+            android:id="@+id/buttonItem12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem11" />
+
+        <ImageView
+            android:id="@+id/imgItem12"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/lasanhavegetariana"
+            app:layout_constraintStart_toEndOf="@id/buttonItem12"
+            app:layout_constraintTop_toTopOf="@id/buttonItem12" />
+
+        <TextView
+            android:id="@+id/textNameItem12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem12"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem12"
+            app:layout_constraintTop_toTopOf="@id/imgItem12" />
+
+        <TextView
+            android:id="@+id/textSubItem12"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem12"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem12"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem12" />
+
+        <TextView
+            android:id="@+id/textPrice12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem12"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem12" />
+        <!-- Prato principal 8 - lasanha vegetariana -->
+
+        <!-- Prato principal 9 - Focaccia mussarela -->
+        <CheckBox
+            android:id="@+id/buttonItem13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem12" />
+
+        <ImageView
+            android:id="@+id/imgItem13"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/focacciamussarela"
+            app:layout_constraintStart_toEndOf="@id/buttonItem13"
+            app:layout_constraintTop_toTopOf="@id/buttonItem13" />
+
+        <TextView
+            android:id="@+id/textNameItem13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem13"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem13"
+            app:layout_constraintTop_toTopOf="@id/imgItem13" />
+
+        <TextView
+            android:id="@+id/textSubItem13"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem13"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem13"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem13" />
+
+        <TextView
+            android:id="@+id/textPrice13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem13"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem13" />
+        <!-- Prato principal 9 - Focaccia mussarela -->
+
+        <!-- Prato principal 10 - Focaccia marguerita -->
+        <CheckBox
+            android:id="@+id/buttonItem14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem13" />
+
+        <ImageView
+            android:id="@+id/imgItem14"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/focacciamarguerita"
+            app:layout_constraintStart_toEndOf="@id/buttonItem14"
+            app:layout_constraintTop_toTopOf="@id/buttonItem14" />
+
+        <TextView
+            android:id="@+id/textNameItem14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem14"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem14"
+            app:layout_constraintTop_toTopOf="@id/imgItem14" />
+
+        <TextView
+            android:id="@+id/textSubItem14"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem14"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem14"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem14" />
+
+        <TextView
+            android:id="@+id/textPrice14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem14"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem14" />
+        <!-- Prato principal 10 - Focaccia marguerita -->
+
+        <!-- Prato principal 11 - Focaccia calabresa -->
+        <CheckBox
+            android:id="@+id/buttonItem15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem14" />
+
+        <ImageView
+            android:id="@+id/imgItem15"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/focacciacalabresa"
+            app:layout_constraintStart_toEndOf="@id/buttonItem15"
+            app:layout_constraintTop_toTopOf="@id/buttonItem15" />
+
+        <TextView
+            android:id="@+id/textNameItem15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem15"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem15"
+            app:layout_constraintTop_toTopOf="@id/imgItem15" />
+
+        <TextView
+            android:id="@+id/textSubItem15"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem15"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem15"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem15"
+            tools:ignore="TooManyViews" />
+
+        <TextView
+            android:id="@+id/textPrice15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem15"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem15" />
+        <!-- Prato principal 11 - Focaccia calabresa -->
+
+        <!-- Prato principal 12 - Focaccia cgumelos -->
+        <CheckBox
+            android:id="@+id/buttonItem16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem15" />
+
+        <ImageView
+            android:id="@+id/imgItem16"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/focacciacogumelo"
+            app:layout_constraintStart_toEndOf="@id/buttonItem16"
+            app:layout_constraintTop_toTopOf="@id/buttonItem16" />
+
+        <TextView
+            android:id="@+id/textNameItem16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem16"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem16"
+            app:layout_constraintTop_toTopOf="@id/imgItem16" />
+
+        <TextView
+            android:id="@+id/textSubItem16"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem16"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem16"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem16" />
+
+        <TextView
+            android:id="@+id/textPrice16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem16"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem16" />
+        <!-- Prato principal 12 - Focaccia cogumelos -->
+
+        <!-- Prato principal 13 - Pizza mussarela -->
+        <CheckBox
+            android:id="@+id/buttonItem17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem16" />
+
+        <ImageView
+            android:id="@+id/imgItem17"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/pizzamussarela"
+            app:layout_constraintStart_toEndOf="@id/buttonItem17"
+            app:layout_constraintTop_toTopOf="@id/buttonItem17" />
+
+        <TextView
+            android:id="@+id/textNameItem17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem17"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem17"
+            app:layout_constraintTop_toTopOf="@id/imgItem17" />
+
+        <TextView
+            android:id="@+id/textSubItem17"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem17"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem17"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem17" />
+
+        <TextView
+            android:id="@+id/textPrice17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem17"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem17" />
+        <!-- Prato principal 13 - Pizza mussarela -->
+
+        <!-- Prato principal 14 - Pizza marguerita -->
+        <CheckBox
+            android:id="@+id/buttonItem18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem17" />
+
+        <ImageView
+            android:id="@+id/imgItem18"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/pizzamarguerita"
+            app:layout_constraintStart_toEndOf="@id/buttonItem18"
+            app:layout_constraintTop_toTopOf="@id/buttonItem18" />
+
+        <TextView
+            android:id="@+id/textNameItem18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem18"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem18"
+            app:layout_constraintTop_toTopOf="@id/imgItem18" />
+
+        <TextView
+            android:id="@+id/textSubItem18"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem18"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem18"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem18" />
+
+        <TextView
+            android:id="@+id/textPrice18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem18"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem18" />
+        <!-- Prato principal 14 - Pizza marguerita -->
+
+        <!-- Final da seção "pratos principas" -->
+
+        <!-- Início da seção "bebidas" -->
+        <TextView
+            android:id="@+id/textSection3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="15dp"
+            android:text="@string/textSection3"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgItem18" />
+
+        <!-- Bebida 1 - Refrigerante lata -->
+        <CheckBox
+            android:id="@+id/buttonItem19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSection3" />
+
+        <ImageView
+            android:id="@+id/imgItem19"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/refrigerante"
+            app:layout_constraintStart_toEndOf="@id/buttonItem19"
+            app:layout_constraintTop_toTopOf="@id/buttonItem19" />
+
+        <TextView
+            android:id="@+id/textNameItem19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem19"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem19"
+            app:layout_constraintTop_toTopOf="@id/imgItem19" />
+
+        <TextView
+            android:id="@+id/textSubItem19"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem19"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem19"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem19" />
+
+        <TextView
+            android:id="@+id/textPrice19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem19"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem19" />
+        <!-- Bebida 1 - Refrigerante lata -->
+
+        <!-- Bebida 2 - Refrigerante 600ml -->
+        <CheckBox
+            android:id="@+id/buttonItem20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem19" />
+
+        <ImageView
+            android:id="@+id/imgItem20"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/refrigerante600"
+            app:layout_constraintStart_toEndOf="@id/buttonItem20"
+            app:layout_constraintTop_toTopOf="@id/buttonItem20" />
+
+        <TextView
+            android:id="@+id/textNameItem20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem20"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem20"
+            app:layout_constraintTop_toTopOf="@id/imgItem20" />
+
+        <TextView
+            android:id="@+id/textSubItem20"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem20"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem20"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem20" />
+
+        <TextView
+            android:id="@+id/textPrice20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem20"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem20" />
+        <!-- Bebida 2 - Refrigerante 600ml -->
+
+        <!-- Bebida 3 - Copo de Suco -->
+        <CheckBox
+            android:id="@+id/buttonItem21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem20" />
+
+        <ImageView
+            android:id="@+id/imgItem21"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/suco"
+            app:layout_constraintStart_toEndOf="@id/buttonItem21"
+            app:layout_constraintTop_toTopOf="@id/buttonItem21" />
+
+        <TextView
+            android:id="@+id/textNameItem21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem21"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem21"
+            app:layout_constraintTop_toTopOf="@id/imgItem21" />
+
+        <TextView
+            android:id="@+id/textSubItem21"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem21"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem21"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem21" />
+
+        <TextView
+            android:id="@+id/textPrice21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem21"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem21" />
+        <!-- Bebida 3 - Copo de suco -->
+
+        <!-- Bebida 4 - Jarra de suco -->
+        <CheckBox
+            android:id="@+id/buttonItem22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem21" />
+
+        <ImageView
+            android:id="@+id/imgItem22"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/jarrasuco"
+            app:layout_constraintStart_toEndOf="@id/buttonItem22"
+            app:layout_constraintTop_toTopOf="@id/buttonItem22" />
+
+        <TextView
+            android:id="@+id/textNameItem22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem22"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem22"
+            app:layout_constraintTop_toTopOf="@id/imgItem22" />
+
+        <TextView
+            android:id="@+id/textSubItem22"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem22"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem22"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem22" />
+
+        <TextView
+            android:id="@+id/textPrice22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem22"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem22" />
+         <!-- Bebida 4 - Jarra de suco -->
+
+        <!-- Bebida 5 - Soda Italiana -->
+        <CheckBox
+            android:id="@+id/buttonItem23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem22" />
+
+        <ImageView
+            android:id="@+id/imgItem23"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/soda"
+            app:layout_constraintStart_toEndOf="@id/buttonItem23"
+            app:layout_constraintTop_toTopOf="@id/buttonItem23" />
+
+        <TextView
+            android:id="@+id/textNameItem23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem23"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem23"
+            app:layout_constraintTop_toTopOf="@id/imgItem23" />
+
+        <TextView
+            android:id="@+id/textSubItem23"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem23"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem23"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem23" />
+
+        <TextView
+            android:id="@+id/textPrice23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem23"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem23" />
+        <!-- Bebida 5 - Soda Italiana -->
+
+        <!-- Final da seção "bebidas" -->
+
+        <!-- Início da seção "sobremesas" -->
+
+        <TextView
+            android:id="@+id/textSection4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="15dp"
+            android:text="@string/textSection4"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgItem23" />
+
+        <!-- Sobremesa 1 - Tiramissu -->
+        <CheckBox
+            android:id="@+id/buttonItem24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSection4" />
+
+        <ImageView
+            android:id="@+id/imgItem24"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/tiramissu"
+            app:layout_constraintStart_toEndOf="@id/buttonItem24"
+            app:layout_constraintTop_toTopOf="@id/buttonItem24" />
+
+        <TextView
+            android:id="@+id/textNameItem24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem24"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem24"
+            app:layout_constraintTop_toTopOf="@id/imgItem24" />
+
+        <TextView
+            android:id="@+id/textSubItem24"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem24"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem24"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem24" />
+
+        <TextView
+            android:id="@+id/textPrice24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem24"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem24" />
+        <!-- Sobremesa 1 - Tiramissu -->
+
+        <!-- Sobremesa 2 - Panna Cotta -->
+        <CheckBox
+            android:id="@+id/buttonItem25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem24" />
+
+        <ImageView
+            android:id="@+id/imgItem25"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/pannacotta"
+            app:layout_constraintStart_toEndOf="@id/buttonItem25"
+            app:layout_constraintTop_toTopOf="@id/buttonItem25" />
+
+        <TextView
+            android:id="@+id/textNameItem25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem25"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem25"
+            app:layout_constraintTop_toTopOf="@id/imgItem25" />
+
+        <TextView
+            android:id="@+id/textSubItem25"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem25"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem25"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem25" />
+
+        <TextView
+            android:id="@+id/textPrice25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem25"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem25" />
+        <!-- Sobremesa 2 - Panna Cotta -->
+
+        <!-- Sobremesa 3 - Canolli -->
+        <CheckBox
+            android:id="@+id/buttonItem26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem25" />
+
+        <ImageView
+            android:id="@+id/imgItem26"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/cannolli"
+            app:layout_constraintStart_toEndOf="@id/buttonItem26"
+            app:layout_constraintTop_toTopOf="@id/buttonItem26" />
+
+        <TextView
+            android:id="@+id/textNameItem26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem26"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem26"
+            app:layout_constraintTop_toTopOf="@id/imgItem26" />
+
+        <TextView
+            android:id="@+id/textSubItem26"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem26"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem26"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem26" />
+
+        <TextView
+            android:id="@+id/textPrice26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem26"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem26" />
+        <!-- Sobremesa 3 - Canolli -->
+
+        <!-- Sobremesa 4 - Zeppole -->
+        <CheckBox
+            android:id="@+id/buttonItem27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem26" />
+
+        <ImageView
+            android:id="@+id/imgItem27"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/zeppole"
+            app:layout_constraintStart_toEndOf="@id/buttonItem27"
+            app:layout_constraintTop_toTopOf="@id/buttonItem27" />
+
+        <TextView
+            android:id="@+id/textNameItem27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem27"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem27"
+            app:layout_constraintTop_toTopOf="@id/imgItem27" />
+
+        <TextView
+            android:id="@+id/textSubItem27"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem27"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem27"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem27" />
+
+        <TextView
+            android:id="@+id/textPrice27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem27"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem27" />
+        <!-- Sobremesa 4 - Zeppole -->
+
+        <!-- Sobremesa 5 - Gelato -->
+        <CheckBox
+            android:id="@+id/buttonItem28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem27" />
+
+        <ImageView
+            android:id="@+id/imgItem28"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/gelato"
+            app:layout_constraintStart_toEndOf="@id/buttonItem28"
+            app:layout_constraintTop_toTopOf="@id/buttonItem28" />
+
+        <TextView
+            android:id="@+id/textNameItem28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem28"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem28"
+            app:layout_constraintTop_toTopOf="@id/imgItem28" />
+
+        <TextView
+            android:id="@+id/textSubItem28"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem28"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem28"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem28" />
+
+        <TextView
+            android:id="@+id/textPrice28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem28"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem28" />
+        <!-- Sobremesa 5 - Gelato -->
+
+        <!-- Sobremesa 6 - Torrone -->
+        <CheckBox
+            android:id="@+id/buttonItem29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem28" />
+
+        <ImageView
+            android:id="@+id/imgItem29"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/torrone"
+            app:layout_constraintStart_toEndOf="@id/buttonItem29"
+            app:layout_constraintTop_toTopOf="@id/buttonItem29" />
+
+        <TextView
+            android:id="@+id/textNameItem29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem29"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem29"
+            app:layout_constraintTop_toTopOf="@id/imgItem29" />
+
+        <TextView
+            android:id="@+id/textSubItem29"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem29"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem29"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem29" />
+
+        <TextView
+            android:id="@+id/textPrice29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem29"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem29" />
+        <!-- Sobremesa 6 - Torrone -->
+
+        <!-- Sobremesa 7 - Zabaglione -->
+        <CheckBox
+            android:id="@+id/buttonItem30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem29" />
+
+        <ImageView
+            android:id="@+id/imgItem30"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/zabaglione"
+            app:layout_constraintStart_toEndOf="@id/buttonItem30"
+            app:layout_constraintTop_toTopOf="@id/buttonItem30" />
+
+        <TextView
+            android:id="@+id/textNameItem30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem30"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem30"
+            app:layout_constraintTop_toTopOf="@id/imgItem30" />
+
+        <TextView
+            android:id="@+id/textSubItem30"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem30"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem30"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem30" />
+
+        <TextView
+            android:id="@+id/textPrice30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem30"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem30" />
+        <!-- Sobremesa 7 - Zabaglione -->
+
+        <!-- Sobremesa 8 - Bomboloni -->
+        <CheckBox
+            android:id="@+id/buttonItem31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonItem30" />
+
+        <ImageView
+            android:id="@+id/imgItem31"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:src="@drawable/bombolone"
+            app:layout_constraintStart_toEndOf="@id/buttonItem31"
+            app:layout_constraintTop_toTopOf="@id/buttonItem31" />
+
+        <TextView
+            android:id="@+id/textNameItem31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNameItem31"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/imgItem31"
+            app:layout_constraintTop_toTopOf="@id/imgItem31" />
+
+        <TextView
+            android:id="@+id/textSubItem31"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textSubItem31"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/textNameItem31"
+            app:layout_constraintTop_toBottomOf="@id/textNameItem31" />
+
+        <TextView
+            android:id="@+id/textPrice31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/textPriceItem31"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textNameItem31" />
+        <!-- Sobremesa 8 - Bomboloni -->
+
+        <!-- Final da seção "sobremesas" -->
+
+        <!-- Início da seção Entrada de texto -->
+        <TextView
+            android:id="@+id/textSectionObs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="10dp"
+            android:text="@string/textSectionObs"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgItem31" />
+
+        <EditText
+            android:id="@+id/editObs"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:hint="@string/textEditObs"
+            android:inputType="textMultiLine"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@id/textSectionObs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Final da seção Entrada de texto -->
+
+        <!-- Início da seção preço -->
+        <TextView
+            android:id="@+id/textSectionPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="10dp"
+            android:text="@string/textSectionPrice1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editObs" />
+
+        <TextView
+            android:id="@+id/textSectionPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textSectionPrice2"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSectionPrice1" />
+
+        <Button
+            android:id="@+id/buttonPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textSectionPrice3"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:backgroundTint="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSectionPrice2" />
+        <!-- Final da seção preço -->
+
+        <!-- Início rodapé -->
+        <TextView
+            android:id="@+id/textFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textFooter"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/buttonPrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <!-- Final rodapé -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

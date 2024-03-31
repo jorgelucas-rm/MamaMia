@@ -1,0 +1,230 @@
+<resources>
+
+    <!-- Textos cabeçalho -->
+    <string name="app_name">Mama Mia</string>
+    <string name="textHeader">Mama Mia</string>
+    <string name="textSubHeader">Cardápo digital</string>
+    <!-- Textos cabeçalho -->
+
+    <!-- Textos seção 1 -->
+    <string name="textSection1">Entradas</string>
+    <!-- Textos seção 1 -->
+
+            <!-- Textos item 1 -->
+            <string name="textNameItem1">Bruschetta</string>
+            <string name="textSubItem1">Antepasto italiano feito à base de pão, que é tostado na grelha com azeite e depois esfregado com alho. (10min)</string>
+            <string name="textPriceItem1">R$12,00</string>
+            <!-- Textos item 1 -->
+
+            <!-- Textos item 2 -->
+            <string name="textNameItem2">Pastéis Variados</string>
+            <string name="textSubItem2">Cesta com pastéis variados nos sabores: Queijo, Carne e Marguerita. (15min)</string>
+            <string name="textPriceItem2">R$15,00</string>
+            <!-- Textos item 2 -->
+
+            <!-- Textos item 3 -->
+            <string name="textNameItem3">Arancini Pomodoro</string>
+            <string name="textSubItem3"> Bolinho recheado de mozzarela italiana e risoto alla milanese. (15min)</string>
+            <string name="textPriceItem3">R$20,00</string>
+            <!-- Textos item 3 -->
+
+            <!-- Textos item 4 -->
+            <string name="textNameItem4">Polenta Bramata</string>
+            <string name="textSubItem4"> Polenta suave e aveludada servida com uma seleção especial de cogumelos, rúcula e um delicioso molho de gorgonzola. (5min)</string>
+            <string name="textPriceItem4">R$22,00</string>
+            <!-- Textos item 4 -->
+
+    <!-- Textos seção 2 -->
+    <string name="textSection2">Prato principal</string>
+    <!-- Textos seção 2 -->
+
+            <!-- Textos item 5 -->
+            <string name="textNameItem5">Macarrão à Carbonara</string>
+            <string name="textSubItem5">Clássica massa cozida al dente acompanhada de bacon, queijo parmesão e gemas de ovos, combinando sabores simples em um prato irresistível. (35min)</string>
+            <string name="textPriceItem5">R$32,90</string>
+            <!-- Textos item 5 -->
+
+            <!-- Textos item 6 -->
+            <string name="textNameItem6">Macarrão ao Molho Branco</string>
+            <string name="textSubItem6">Clássica massa cozida al dente acompanhada do melhor molho branco. (35min)</string>
+            <string name="textPriceItem6">R$32,90</string>
+            <!-- Textos item  6 -->
+
+            <!-- Textos item  7 -->
+            <string name="textNameItem7">Macarrão ao Molho Pesto</string>
+            <string name="textSubItem7">Clássica massa cozida al dente acompanhada de molho pesto. (35min)</string>
+            <string name="textPriceItem7">R$32,90</string>
+            <!-- Textos item 7 -->
+
+            <!-- Textos item 8 -->
+            <string name="textNameItem8">Macarrão ao Molho Pomodoro</string>
+            <string name="textSubItem8">Clássica massa cozida al dente acompanhada de molho pomodoro, feito com o molho de tomate da casa. (35min)</string>
+            <string name="textPriceItem8">R$32,90</string>
+            <!-- Textos item 8 -->
+
+            <!-- Textos item 9 -->
+            <string name="textNameItem9">Lasanha 4 Queijos</string>
+            <string name="textSubItem9">Lasanha preparada com uma massa especial, finalizada com os queijos mussarela, parmesão, gorgonzola e provolone. (35min)</string>
+            <string name="textPriceItem9">R$28,90</string>
+            <!-- Textos item  9 -->
+
+            <!-- Textos item  10 -->
+            <string name="textNameItem10">Lasanha Bolonhesa</string>
+            <string name="textSubItem10">Lasanha preparada com uma massa especial, molho de tomate da casa e finalizada com queijo mussarela, e molho bolonhesa. (35min)</string>
+            <string name="textPriceItem10">R$28,90</string>
+            <!-- Textos item 10 -->
+
+            <!-- Textos item 11 -->
+            <string name="textNameItem11">Lasanha Sertaneja</string>
+            <string name="textSubItem11">Lasanha preparada com uma massa especial, molho de tomate da casa e finalizada com queijo coalho, e carne do sol. (35min)</string>
+            <string name="textPriceItem11">R$30,90</string>
+            <!-- Textos item 11 -->
+
+            <!-- Textos item 12 -->
+            <string name="textNameItem12">Lasanha Vegetariana</string>
+            <string name="textSubItem12">Lasanha preparada com uma massa especial, molho de tomate da casa e finalizada com queijo, berinjela e abobrinha. (35min)</string>
+            <string name="textPriceItem12">R$30,90</string>
+            <!-- Textos item  12 -->
+
+            <!-- Textos item  13 -->
+            <string name="textNameItem13">Focaccia de Mussarela</string>
+            <string name="textSubItem13">Pão baixo, feito de uma mistura de farinha, água, sal e fermento e finalizado com queijo mussarela. (30min)</string>
+            <string name="textPriceItem13">R$24,00</string>
+            <!-- Textos item 13 -->
+
+            <!-- Textos item 14 -->
+            <string name="textNameItem14">Focaccia Marguerita</string>
+            <string name="textSubItem14">Pão baixo, feito de uma mistura de farinha, água, sal e fermento e finalizado com queijo mussarela, tomates e manjericão. (30min)</string>
+            <string name="textPriceItem14">R$24,00</string>
+            <!-- Textos item  14 -->
+
+            <!-- Textos item  15 -->
+            <string name="textNameItem15">Focaccia de Calabresa</string>
+            <string name="textSubItem15">Pão baixo, feito de uma mistura de farinha, água, sal e fermento e finalizado com queijo mussarela e calabresa. (30min)</string>
+            <string name="textPriceItem15">R$24,00</string>
+            <!-- Textos item 15 -->
+
+            <!-- Textos item 16 -->
+            <string name="textNameItem16">Focaccia de Cogumelos</string>
+            <string name="textSubItem16">Pão baixo, feito de uma mistura de farinha, água, sal e fermento e finalizado com queijo mussarela e cogumelos. (30min)</string>
+            <string name="textPriceItem16">R$28,00</string>
+            <!-- Textos item 16 -->
+
+            <!-- Textos item 17 -->
+            <string name="textNameItem17">Pizza Mussarela</string>
+            <string name="textSubItem17">Pizza commassa de longa finalização, molhode tomate da casa finalizada com queijo mussarela. (32min)</string>
+            <string name="textPriceItem17">R$27,00</string>
+            <!-- Textos item  17 -->
+
+            <!-- Textos item  18 -->
+            <string name="textNameItem18">Pizza Marguerita</string>
+            <string name="textSubItem18">Pizza commassa de longa finalização, molhode tomate da casa finalizada com queijo mussarela, tomates e manjericão. (32min)</string>
+            <string name="textPriceItem18">R$29,00</string>
+            <!-- Textos item 18 -->
+
+
+    <!-- Textos seção 3 -->
+    <string name="textSection3">Bebidas</string>
+    <!-- Textos seção 3 -->
+
+            <!-- Textos item 19 -->
+            <string name="textNameItem19">Refrigerante Lata</string>
+            <string name="textSubItem19"> Lata de refrigerante 350ml (Consultar sabres disponíveis). (5min)</string>
+            <string name="textPriceItem19">R$7,90</string>
+            <!-- Textos item  19 -->
+
+            <!-- Textos item  20 -->
+            <string name="textNameItem20">Refrirante 600ml</string>
+            <string name="textSubItem20">Garrafa de refrigerante 600ml (Consultar sabores disponíveis). (5min)</string>
+            <string name="textPriceItem20">R$10,90</string>
+            <!-- Textos item 20 -->
+
+            <!-- Textos item 21 -->
+            <string name="textNameItem21">Copo de Suco</string>
+            <string name="textSubItem21">Copo de suco da fruta 400ml (Consultar sabores disponíveis). (15min)</string>
+            <string name="textPriceItem21">R$6,00</string>
+            <!-- Textos item 21 -->
+
+            <!-- Textos item 22 -->
+            <string name="textNameItem22">Jarra de Suco</string>
+            <string name="textSubItem22">Jarra de suco da fruta 1l (Consultar sabores disponíveis). (20min)</string>
+            <string name="textPriceItem22">R$10,00</string>
+            <!-- Textos item  22 -->
+
+            <!-- Textos item  23 -->
+            <string name="textNameItem23">Soda Italiana</string>
+            <string name="textSubItem23">A soda italiana é uma bebida refrescante, colorida e gostosa. É preparada de forma artesanal com xarope de frutas, água gaseificada e gelo. (15min)</string>
+            <string name="textPriceItem23">R$12,90</string>
+            <!-- Textos item 23 -->
+
+    <!-- Textos seção 4 -->
+    <string name="textSection4">Sobremesas</string>
+    <!-- Textos seção 4 -->
+
+            <!-- Textos item 24 -->
+            <string name="textNameItem24">Tiramissu</string>
+            <string name="textSubItem24">Clássica massa cozida al dente acompanhada de bacon, queijo parmesão e gemas de ovos, combinando sabores simples em um prato irresistível. (10min)</string>
+            <string name="textPriceItem24">R$10,00</string>
+            <!-- Textos item 24 -->
+
+            <!-- Textos item 25 -->
+            <string name="textNameItem25">Panna Cotta</string>
+            <string name="textSubItem25">Creme cozido até ganhar uma textura suave, saborizado com baunilha e finalizado com calda de morango. (20min)</string>
+            <string name="textPriceItem25">R$12,00</string>
+            <!-- Textos item  25 -->
+
+            <!-- Textos item  26 -->
+            <string name="textNameItem26">Canolli</string>
+            <string name="textSubItem26">Um tubinho feito com massa doce frita, recheado com um creme a base de queijo ricota, finalizado com baunilha e chocolate. (10min)</string>
+            <string name="textPriceItem26">R$8,00</string>
+            <!-- Textos item 26 -->
+
+            <!-- Textos item 27 -->
+            <string name="textNameItem27">Zeppole</string>
+            <string name="textSubItem27">Rosquinha doce feita com massa choux e recheio de creme de confeiteiro. (20min)</string>
+            <string name="textPriceItem27">R$8,00</string>
+            <!-- Textos item  27 -->
+
+            <!-- Textos item  28 -->
+            <string name="textNameItem28">Gelatos</string>
+            <string name="textSubItem28">Sorvetes cremosos com sabores variados (10min)</string>
+            <string name="textPriceItem28">R$8,00</string>
+            <!-- Textos item 28 -->
+
+            <!-- Textos item 29 -->
+            <string name="textNameItem29">Torrone</string>
+            <string name="textSubItem29">Doce preparado com um mix de nozes, castanhas e marshmallow (10min)</string>
+            <string name="textPriceItem29">R$8,00</string>
+            <!-- Textos item 29 -->
+
+            <!-- Textos item 30 -->
+            <string name="textNameItem30">Zabaglione</string>
+            <string name="textSubItem30">Creme composto de gemas, açúcar e vinho marsala, finalizado com frutas picadas. (15min)</string>
+            <string name="textPriceItem30">R$12,00</string>
+            <!-- Textos item  30 -->
+
+            <!-- Textos item  31 -->
+            <string name="textNameItem31">Bomboloni</string>
+            <string name="textSubItem31">Massa doce frita recheada com creme de confeiteiro e finalizada com açúcar. (35min)</string>
+            <string name="textPriceItem31">R$10,00</string>
+            <!-- Textos item 31 -->
+
+        <!-- Textos entrada de texto -->
+        <string name="textSectionObs">Você deseja adicionar alguma onservação ao seu pedido?</string>
+        <string name="textEditObs">Digite aqui as suas observações.</string>
+
+        <!-- Textos entrada de texto -->
+
+        <!-- Textos preço -->
+        <string name="textSectionPrice1">O valor total da sua comanda será de:</string>
+        <string name="textSectionPrice2">R$00,00</string>
+        <string name="textSectionPrice3">Confirmar pedido</string>
+        <string name="textSectionToast">Seu pedido foi enviado para a cozinha!</string>
+        <!-- Textos preço -->
+
+        <!-- Textos rodapé -->
+        <string name="textFooter">©2024 Jorge Martins, All rights reserved.</string>
+        <!-- Textos rodapé -->
+
+
+</resources>
