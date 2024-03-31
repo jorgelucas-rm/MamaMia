@@ -1640,7 +1640,6 @@
             app:layout_constraintTop_toBottomOf="@id/textSectionObs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-
         <!-- Final da seção Entrada de texto -->
 
         <!-- Início da seção preço -->
@@ -1657,7 +1656,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editObs" />
-
         <TextView
             android:id="@+id/textSectionPrice2"
             android:layout_width="wrap_content"
